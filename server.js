@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var mongojs = require("mongojs");
+var mongojs = require("mongoose");
 var db = mongojs("contactlist", ["contactlist"]);
 
 app.use(express.static(__dirname + "/public"));			
