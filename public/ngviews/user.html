@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="stylesheets/subreddit.css">
+
+<i class="fa fa-angle-right" id="menu-toggle"  ng-click="openMenu()" ng-show="menuOpen"></i> 
+<i class="fa fa-angle-left" id="menu-toggle"  ng-click="openMenu()" ng-show="!menuOpen"></i> 
+
+
+<h3>Enter Reddit Usernames and compare likes on and comment posted by those users!</h3>
+
+<div id="buttons">
+
+<!-- <button ng-click='getOption("num_comments")'>comments</button> -->
+<button ng-click='getOption("ups")'>Get Upvotes</button>
+<input type="text" ng-model='user'>
+
+	<!-- <button ng-click='add()' class="btn btn-danger">new</button> -->
+	<button ng-click='bar()' class="btn btn-danger">bar</button>
+	<button ng-click='pie()' class="btn btn-danger">pie</button>
+	<button ng-click='spline()' class="btn btn-danger">spline </button>
+</div>
+
+<div id="chart"></div>
+

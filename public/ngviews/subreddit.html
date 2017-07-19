@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="stylesheets/subreddit.css">
+
+<i class="fa fa-angle-right" id="menu-toggle"  ng-click="openMenu()" ng-show="menuOpen"></i> 
+<i class="fa fa-angle-left" id="menu-toggle"  ng-click="openMenu()" ng-show="!menuOpen"></i> 
+
+
+<h1>Search Data</h1>
+
+<!-- <button ng-click='getOption("num_comments")'>comments</button> -->
+
+<h3>Search Subreddit's Total Upvotes and Compare</h3>
+
+<button ng-click='getOption("ups")'>Get Upvotes</button>
+<input type="text" ng-model='subreddit'>
+
+<div id="buttons">
+	<!-- <button ng-click='add()' class="btn btn-danger">new</button> -->
+	<button ng-click='bar()' class="btn btn-danger">bar</button>
+	<button ng-click='pie()' class="btn btn-danger">pie</button>
+	<button ng-click='spline()' class="btn btn-danger">spline </button>
+</div>
+
+<div id="chart"></div>
+
+<h3>Search Subreddit's Comment Upvotes and Compare</h3>
+
+<button ng-click='getOption2("num_comments")'>Comment Amount</button>
+<input type="text" ng-model='subreddit2'>
+
+<div id="buttons">
+  
+	<button ng-click='bar2()' class="btn btn-danger">bar</button>
+	<button ng-click='pie2()' class="btn btn-danger">pie</button>
+	<button ng-click='spline2()' class="btn btn-danger">spline </button>
+</div>
+
+<div id="chart2"></div>
+
+
+
+
+
+
